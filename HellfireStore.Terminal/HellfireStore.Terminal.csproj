@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D75CB272-3C4D-4D19-8E8F-05A194D31C5B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HellfireStore.Atendimento</RootNamespace>
-    <AssemblyName>HellfireStore.Atendimento</AssemblyName>
+    <RootNamespace>HellfireStore.Terminal</RootNamespace>
+    <AssemblyName>HellfireStore.Terminal</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
