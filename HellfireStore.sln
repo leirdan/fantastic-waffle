@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellfireStore.Terminal", "HellfireStore.Terminal\HellfireStore.Terminal.csproj", "{D75CB272-3C4D-4D19-8E8F-05A194D31C5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellfireStore.Models", "HellfireStore.Models\HellfireStore.Models.csproj", "{1B621F03-CD93-4A09-A192-540DDE4AE263}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D75CB272-3C4D-4D19-8E8F-05A194D31C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D75CB272-3C4D-4D19-8E8F-05A194D31C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D75CB272-3C4D-4D19-8E8F-05A194D31C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B621F03-CD93-4A09-A192-540DDE4AE263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B621F03-CD93-4A09-A192-540DDE4AE263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B621F03-CD93-4A09-A192-540DDE4AE263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B621F03-CD93-4A09-A192-540DDE4AE263}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

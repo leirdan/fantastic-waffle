@@ -1,6 +1,4 @@
-﻿using CSharpWithPOO.Employees;
-
-namespace HellfireStore.Employees
+﻿namespace HellfireStore.Employees
 {
     class Manager : AuthenticableEmployee
     {

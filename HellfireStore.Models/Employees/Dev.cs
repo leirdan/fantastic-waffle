@@ -1,8 +1,6 @@
-﻿using CSharpWithPOO.Employees;
-
-namespace HellfireStore.Employees
+﻿namespace HellfireStore.Employees
 { 
-   class Dev : AuthenticableEmployee
+   public class Dev : AuthenticableEmployee
    {
         public Dev(string name, string cpf, int id, double wage) : base(name, cpf, id, wage)
         {

@@ -1,10 +1,10 @@
 ﻿using HellfireStore.Employees;
+using HellfireStore.Models;
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace HellfireStore.MIS
 {
-    class App
+    public class App
     {
         public double Cash { get; set; }
 
@@ -40,18 +40,36 @@ namespace HellfireStore.MIS
                     }
                     else if (option == 2)
                     {
-                        Console.WriteLine("Insert here its infos!");
-                        Console.WriteLine("Name:");
-                        string name = Console.ReadLine();
-                        Console.WriteLine("CPF:");
-                        string cpf = Console.ReadLine();
+                        try
+                        {
+                            RegisterEmployee();
+                        }
+                        catch (FormatException e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                        catch (ArgumentException e)
+                        {
+                            Console.WriteLine(e.Message);
+                            Console.WriteLine(e.ParamName);
+                        }
+                        catch (Exception)
+                        {
+                            throw new Exception();
+                        }
+                    }
+                    else if (option == 3)
+                    {
+                        RegisterSupplier();
                     }
                 };
 
             }
             catch (ArgumentException e)
-            {   Console.WriteLine("an error has occurred with one parameter...");
-                Console.WriteLine(e.ParamName); }
+            {
+                Console.WriteLine("an error has occurred with one parameter...");
+                Console.WriteLine(e.ParamName);
+            }
             catch (FormatException e)
             {
                 Console.WriteLine("your parameter has an error type");
@@ -98,10 +116,11 @@ namespace HellfireStore.MIS
                         try
                         {
                             album.Stock -= amount;
-                            Cash += (album.Price * amount);
+                            Cash += album.Price * amount;
                             client.AlbumsBought++;
                             Console.WriteLine("Thank you, have a nice day!");
-                        } catch (ArithmeticException ex)
+                        }
+                        catch (ArithmeticException ex)
                         {
                             Console.WriteLine(ex.Message);
                         }
@@ -120,7 +139,8 @@ namespace HellfireStore.MIS
 
         protected void RegisterEmployee()
         {
-            try {
+            try
+            {
                 Console.WriteLine("Insert here its infos!");
                 Console.WriteLine("Name:");
                 string name = Console.ReadLine();
@@ -147,7 +167,7 @@ namespace HellfireStore.MIS
                 }
                 Console.WriteLine($"Employee {em.Name} registered!");
                 Employee.Employees++;
-            } 
+            }
             catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
@@ -158,13 +178,19 @@ namespace HellfireStore.MIS
             }
         }
 
-        protected void RegisterSupplier (Supplier s)
+        void RegisterSupplier()
         {
             try
             {
+                Console.WriteLine("insert here its info!");
+                Console.WriteLine("Name:");
+                string name = Console.ReadLine();
+                Console.WriteLine("Password:");
+                string passwd = Console.ReadLine();
+                Supplier s = new Supplier(name, passwd);
                 Console.WriteLine($"Supplier {s.Name} registered!");
             }
-            catch (ArgumentException ex) 
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }

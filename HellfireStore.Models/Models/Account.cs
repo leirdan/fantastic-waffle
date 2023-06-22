@@ -1,9 +1,10 @@
-﻿using System;
+﻿using HellfireStore.Models;
+using System;
 using System.Collections.Generic;
 
 namespace HellfireStore
 {
-    class Account
+    public class Account
     {
         public Client Client;
         public DateTime Created_At = DateTime.Now;

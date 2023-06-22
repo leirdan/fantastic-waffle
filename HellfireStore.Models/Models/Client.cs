@@ -1,6 +1,6 @@
-﻿namespace HellfireStore
+﻿namespace HellfireStore.Models
 {
-    class Client
+    public class Client
     {
         public string Name { get; set; }
 

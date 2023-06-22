@@ -1,13 +1,13 @@
-﻿namespace HellfireStore
+﻿namespace HellfireStore.Models
 {
-    enum HandOrientation
+    public enum HandOrientation
     {
         LEFT = 0,
         RIGHT = 1,
         BOTH = 2
     }
 
-    class Guitar
+    public class Guitar
     {
         public int ID { get; }
         public string Model;

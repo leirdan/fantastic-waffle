@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HellfireStore
+namespace HellfireStore.Exceptions
 {
     class InsufficientRecordsException : Exception
     {

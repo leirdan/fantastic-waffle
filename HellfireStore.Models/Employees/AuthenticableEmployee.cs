@@ -1,9 +1,8 @@
-﻿using HellfireStore.Employees;
-using HellfireStore.MIS;
+﻿using HellfireStore.MIS;
 
-namespace CSharpWithPOO.Employees
+namespace HellfireStore.Employees
 {
-    abstract class AuthenticableEmployee : Employee, IAuthController
+    public abstract class AuthenticableEmployee : Employee, IAuthController
     {
         protected AuthenticableEmployee(string name, string cpf, int id, double wage) : base(name, cpf, id, wage)
         {

@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HellfireStore.Models\HellfireStore.Models.csproj">
+      <Project>{1b621f03-cd93-4a09-a192-540dde4ae263}</Project>
+      <Name>HellfireStore.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

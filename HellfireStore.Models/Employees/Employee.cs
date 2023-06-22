@@ -2,7 +2,7 @@
 
 namespace HellfireStore.Employees
 {
-    abstract class Employee
+    public abstract class Employee
     {
         public int ID { get; }
         public string Name { get; set; }

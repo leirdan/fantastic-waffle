@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hellfire.Models
+namespace HellfireStore.Models
 {
     public class Class1
     {
     }
 }
+ 
