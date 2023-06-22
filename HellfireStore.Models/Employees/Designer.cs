@@ -6,7 +6,7 @@
         {
         }
 
-        public override double GetBonus()
+        internal protected override double GetBonus()
         {
             return Wage * 0.15;
         }

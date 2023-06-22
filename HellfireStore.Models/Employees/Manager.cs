@@ -5,7 +5,7 @@
         public Manager(string name, string cpf, int id, double wage) : base(name, cpf, id, wage)
         {
         }
-        public override double GetBonus() { return Wage * 0.30; }
+        internal protected override double GetBonus() { return Wage * 0.30; }
 
         public override void IncreaseWage()
         {

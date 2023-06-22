@@ -13,7 +13,8 @@ namespace HellfireStore.Employees
 
         public abstract void IncreaseWage();
 
-        public abstract double GetBonus();
+        // Internal protected é 1 modificador de acesso (não 2) que indica que o método é acessível em todo o projeto (HellfireStore.Models) e em quaisquer classes fora deste que o implementem.
+        internal protected abstract double GetBonus();
 
         public Employee(string name, string cpf, int id, double wage)
         {

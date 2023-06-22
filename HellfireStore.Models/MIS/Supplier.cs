@@ -1,4 +1,6 @@
-﻿namespace HellfireStore.MIS
+﻿using HellfireStore.Models.Helpers;
+
+namespace HellfireStore.MIS
 {
     class Supplier : IAuthController
     {
@@ -9,9 +11,11 @@
             Name = name; 
             Passwd = passwd;
         }
+
+        private AuthHelper _authHelper = new AuthHelper();
         public bool Authenticate(string passwd)
         {
-            return this.Passwd == passwd;
+            return _authHelper.ComparePasswd(this.Passwd, passwd);
         }
     }
 }

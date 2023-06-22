@@ -1,4 +1,5 @@
 ﻿using HellfireStore.MIS;
+using HellfireStore.Models.Helpers;
 
 namespace HellfireStore.Employees
 {
@@ -8,9 +9,10 @@ namespace HellfireStore.Employees
         {
         }
         public string Passwd { protected get; set; }
+        private AuthHelper _authHelper = new AuthHelper();
         public bool Authenticate(string passwd)
         {
-            return Passwd == passwd;
+            return _authHelper.ComparePasswd(this.Passwd, passwd);
         }
     }
 }
